@@ -26,9 +26,10 @@ const MIME = {
 
 createServer(async (req, res) => {
   let url = decodeURIComponent(req.url.split('?')[0]);
-  if (url === '/') url = '/index.html';
+  if (url.endsWith('/')) url += 'index.html';
 
-  const filePath = join(__dirname, url);
+  let filePath = join(__dirname, url);
+  if (!extname(filePath)) filePath = join(filePath, 'index.html'); // mirror Netlify's directory-index serving
   const ext = extname(filePath).toLowerCase();
   const contentType = MIME[ext] || 'application/octet-stream';
 
