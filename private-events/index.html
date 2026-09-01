@@ -8,14 +8,17 @@
 <link rel="canonical" href="https://www.urbanlinksgolf.com/private-events/">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/favicon.png">
+<meta name="theme-color" content="#1E3228">
 
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Urban Links Golf Club">
 <meta property="og:title" content="Private Events — Urban Links Golf Club">
 <meta property="og:description" content="Your event. Our clubhouse. The whole facility, and nobody else in it.">
 <meta property="og:url" content="https://www.urbanlinksgolf.com/private-events/">
 <meta property="og:image" content="https://www.urbanlinksgolf.com/assets/photo-lounge.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Private Events — Urban Links Golf Club">
+<meta name="twitter:description" content="Your event. Our clubhouse. The whole facility, and nobody else in it.">
 <meta name="twitter:image" content="https://www.urbanlinksgolf.com/assets/photo-lounge.jpg">
 
 <link rel="preload" as="image" href="/assets/photo-lounge-mobile.jpg" media="(max-width: 768px)">
@@ -25,6 +28,33 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Urban Links Golf Club",
+  "description": "A private, 24/7 indoor golf club available for full-facility event buyouts in Fort Thomas, KY.",
+  "url": "https://www.urbanlinksgolf.com/private-events/",
+  "image": "https://www.urbanlinksgolf.com/assets/photo-lounge.jpg",
+  "telephone": "+18596005553",
+  "email": "contacturbanlinks@gmail.com",
+  "priceRange": "$175-$300",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "26 N Fort Thomas Ave",
+    "addressLocality": "Fort Thomas",
+    "addressRegion": "KY",
+    "postalCode": "41075",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }
+}
+</script>
 </head>
 <body id="page-events">
 
@@ -56,6 +86,7 @@
 </div>
 <div class="nav-spacer"></div>
 
+<main>
 <!-- Hero -->
 <div class="hero hero-short">
   <div class="hero-c">
@@ -204,11 +235,12 @@
     </div>
   </div>
 </div>
+</main>
 
 <footer class="site-footer">
   <div class="footer-top">
     <div class="footer-left">
-      <img src="/assets/logo-raccoon.png" alt="Urban Links Golf Club">
+      <img src="/assets/logo-raccoon.png" alt="Urban Links Golf Club" width="300" height="276" loading="lazy" decoding="async">
       <div class="footer-addr">
         <p>26 N Fort Thomas Ave<br>Fort Thomas, KY 41075</p>
         <p class="sub">Minutes from Cincinnati</p>
@@ -234,6 +266,6 @@
   </div>
 </footer>
 
-<script src="/site.js"></script>
+<script src="/site.js" defer></script>
 </body>
 </html>
