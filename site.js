@@ -58,7 +58,8 @@ document.querySelectorAll('form[data-netlify-ajax]').forEach(form => {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(data).toString(),
-    }).then(() => {
+    }).then((res) => {
+      if (!res.ok) throw new Error(`Form submission failed: ${res.status}`);
       form.classList.add('form-hidden');
       const success = document.getElementById(form.dataset.successId);
       if (success) success.classList.remove('form-hidden');
